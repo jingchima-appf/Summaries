@@ -3,7 +3,7 @@
 - 
 
 # To-dos 
-- Clean up codes (including format checker and Zerobounce
+- Clean up codes (including format checker and Zerobounce)
 - Add StrikeIron (seems no gem for this)
 
 # Problems
@@ -22,7 +22,7 @@
 - If two results from two companies conflict, what to do.
 
 - Bulk validation?
-
+- Not able to integrate Skrikeiron.
 - Should we use start or new? Basically should we keep a connection open? (if yes, then when do we close it?)
   1. NET::HTTP.start: open a new connection
   2. NET::HTTP.new: reuse an open connection
