@@ -24,6 +24,8 @@
 - Bulk validation?
 
 - Should we use start or new? Basically should we keep a connection open? (if yes, then when do we close it?)
+  1. NET::HTTP.start: open a new connection
+  2. NET::HTTP.new: reuse an open connection
 
 # !!!!!!!!Answer NOW !!!!!!
 - Where to put configuration?
