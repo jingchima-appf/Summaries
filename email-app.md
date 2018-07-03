@@ -16,16 +16,9 @@
     2. Ask client to do encode
     3. Use another controller to do encode.
 
-- Do we need to give options on which kind of emails are considered as invalid? \
-  (Currently toxic and desposable ones are also considered as 'invalid') - maybe easier to manage in future
-
 - If two results from two companies conflict, what to do.
 
-- Bulk validation?
-- Not able to integrate Skrikeiron.
-- Should we use start or new? Basically should we keep a connection open? (if yes, then when do we close it?)
-  1. NET::HTTP.start: open a new connection
-  2. NET::HTTP.new: reuse an open connection
+- Do we need to change the schema to add validation_data
 
 # !!!!!!!!Answer NOW !!!!!!
 - Where to put configuration?
