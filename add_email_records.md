@@ -2,6 +2,7 @@
 - To test this controller, may need to first create a csv file, and then send the file to controller.\
 So first need to upload the file, and then send it.
 ### Problems:
+- Whne use `script/start` to start server, request.body is of type `PhusionPassenger::Utils::TeeInput`. But when using unit test, it becomes `StringIO`.
 - Not able to upload and send file correcly. 
   
 Tried this method `fixture_file_upload('files/test.csv','text/csv')`, but content 
