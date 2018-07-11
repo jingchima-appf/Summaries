@@ -30,7 +30,7 @@ to test whether code is robust or not
 - Input must not be empty, and must be passed as an array when there are multiple emails. Otherwise will return
 `{ error: 'emails_can_not_be_empty_and_must_be_array' }` and status is `unprocessable_entity` \
 P.S. in case you need it, the params in uri will look like this: `?emails[]=invalid@example.com&emails[]=valid@example.com`
-- Single email validation is also supported using this route. However, the response will still be an array.
+- Single email validation is also supported using this route. However, the response will still be an array. \
 P.S. uri looks like `?emails=invalid@example.com`
 
 
