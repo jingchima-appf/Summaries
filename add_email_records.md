@@ -25,3 +25,10 @@ In controller, if we test the file received like this:
 ```
 Got this result: `------------XnJLe9ZIbbGUYtzPQJ16u1`
 
+
+## Batch Email Validation
+- Currently Zerobounce has no API for bulk email validation. \
+So if we want to create api for batch email validation, we have to do email validation for each single email_address. This is 
+essentially the same as <b>for each eamil, send to our own email validatation route<b>
+  
+- What is given as input? A file, or an array as param in get request?
