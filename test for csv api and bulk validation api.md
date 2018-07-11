@@ -15,7 +15,7 @@ and status is 'unprocessable_entity`
 `{status: 'succeeded', message: 'email_address_inserted'}` and status is `ok`
 - Empty lines in file is ignored and won't raise exception
 
-## Suggestions for writing test files
+## Suggestions
 - Use two versions, one is with quotes, like this `"email_address"`, the other is not, like `email_address`
 - In addition to testing responses mentioned in section "Requirement for input", we may use some bad-formatted files (e.g. contains empty lines, additional spaces, etc)
 to test whether code is robust or not
@@ -34,7 +34,7 @@ P.S. in case you need it, the params in uri will look like this: `?emails[]=inva
 P.S. uri looks like `?emails=invalid@example.com`
 
 
-#### Suggestions for writing test files
+## Suggestions
 - Test the responses in section `Requirement for input`
 - Test emails given in other form than array
 - Test some emails multiple times (mainly to check whether database works fine)
