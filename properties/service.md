@@ -1,10 +1,9 @@
 ## Questions
 
 ### Database:
-- Which sql database should we use? Mysql, postsql, sqlite?
-- Should uuid be of string type?
-- Should we allow update by client-side in the database? It seems the data in database comes from data-stream, if we allow client
-to change the data, won't there be inconsistency?
+- <s>Which sql database should we use? Mysql, postsql, sqlite?</s> Use mysql
+- <s>Should uuid be of string type?</s> yes
+- <s>Should we allow update by client-side in the database? It seems the data in database comes from data-stream, if we allow client to change the data, won't there be inconsistency?</s> let's allow it for now
 - Should we use id or uuid?
 
 ### Controller:
