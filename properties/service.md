@@ -19,7 +19,64 @@ to change the data, won't there be inconsistency?
     - else return not_found
    
 ### Configuration Problems
-- It seems we don't AWS for this service (so no need for sync_controller?)
 - health_check, authentication check, do we need to implement them?
-
+- Configuration files \
+  - root folder 
   
+  |properties_app | users_app           | 
+  |---------------|--------------------:|
+  |               |gemsurance           |
+  |               |gitignore            |
+  |               | .rubocop.yml        |
+  |               | .ruby-version       |
+  |               | appspec.yml         |
+  |               | secrets_manifest.yml|
+  |               |                     |
+
+  - tmp/pid folder
+  
+  |properties_app | users_app           | 
+  |---------------|--------------------:|
+  | server.pid    |passenger.3000.pid.lock|
+  
+  - log folder 
+  
+  |properties_app | users_app           | 
+  |---------------|--------------------:|
+  |               |newrelic_agent.log   |
+  |               |passenger.3000.log   |
+  
+  - lib folder
+  
+  |properties_app | users_app           | 
+  |---------------|--------------------:|
+  |               |(things related to dynomoid)|
+  
+  
+  - config folder
+    - envivironment folder
+    
+     |file |properties_app | users_app           | 
+     |---  |:-------------:|--------------------:|
+     |development|config.active_record.migration_error = :page_load|   |
+     |production|config.log_level = :debug|config.log_level = :info|
+     | .   |config.active_record.dump_schema_after_migration = false|  |
+  
+    - initializers folder
+    
+     |file |properties_app | users_app           | 
+     |---  |:-------------:|--------------------:|
+     | .   |               | silencer.rb .       |
+     | .   | .             | sync_settings.rb .  |
+   
+    - ONLY users_app has `settings` folder
+      
+    - root folder
+    
+      |file |properties_app | users_app           | 
+      |---  |:-------------:|--------------------:|
+      |secrets.yml|         | settings for appfolio|
+      | puma.rb | has puma.rb   |                 |
+      |application.rb| .    |   appfolio settings | 
+      |database.yml| how to configure this file | null|
+      
