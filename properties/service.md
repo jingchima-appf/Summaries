@@ -53,6 +53,8 @@
      |---  |:-------------:|--------------------:|
      | .   |               | silencer.rb .       |
      | .   | .             | sync_settings.rb .  |
+     |     |backtrace silencers|                 |
+     |     |application_controller_renderer.rb|  |
    
     - <s>ONLY users_app has `settings` folder</s>
       
