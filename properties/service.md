@@ -14,7 +14,7 @@
     - else if vhost_endpoint is specified, return all vhosts with that vhost_endpoint
     - else return unprocessible-entity 
   - update: only for single vhost
-    - if uuid is speficied, update that vhost with new address and end_point
+    - if uuid is speficied(means not blank), update that vhost with new address and end_point. Always return :ok.
     - else return not_found
    
 ### Configuration Problems
@@ -37,21 +37,7 @@
   |properties_app | users_app           | 
   |---------------|--------------------:|
   | server.pid    |passenger.3000.pid.lock|
-  
-  - log folder 
-  
-  |properties_app | users_app           | 
-  |---------------|--------------------:|
-  |               |newrelic_agent.log   |
-  |               |passenger.3000.log   |
-  
-  - lib folder
-  
-  |properties_app | users_app           | 
-  |---------------|--------------------:|
-  |               |(things related to dynomoid)|
-  
-  
+   
   - config folder
     - envivironment folder
     
@@ -68,14 +54,14 @@
      | .   |               | silencer.rb .       |
      | .   | .             | sync_settings.rb .  |
    
-    - ONLY users_app has `settings` folder
+    - <s>ONLY users_app has `settings` folder</s>
       
     - root folder
     
       |file |properties_app | users_app           | 
       |---  |:-------------:|--------------------:|
       |secrets.yml|         | settings for appfolio|
-      | puma.rb | has puma.rb   |                 |
-      |application.rb| .    |   appfolio settings | 
-      |database.yml| how to configure this file | null|
+      | <s>puma.rb</s> | <s>has puma.rb</s>   |                 |
+      |<s>application.rb</s>| .    |  <s> appfolio settings</s> | 
+      |<s>database.yml| how to configure this file | null|
       
