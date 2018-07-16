@@ -24,10 +24,10 @@
   
   |properties_app | users_app           | 
   |---------------|--------------------:|
-  |               |gemsurance           |
+  |               |<s>gemsurance</s>           |
   |               |gitignore            |
-  |               | .rubocop.yml        |
-  |               | .ruby-version       |
+  |               | <s>.rubocop.yml</s>        |
+  |               | <s>.ruby-version</s>       |
   |               | appspec.yml         |
   |               | secrets_manifest.yml|
   |               |                     |
@@ -36,25 +36,24 @@
   
   |properties_app | users_app           | 
   |---------------|--------------------:|
-  | server.pid    |passenger.3000.pid.lock|
+  |pit_tty_map.yml|                     |
    
   - config folder
     - envivironment folder
     
      |file |properties_app | users_app           | 
      |---  |:-------------:|--------------------:|
-     |development|config.active_record.migration_error = :page_load|   |
-     |production|config.log_level = :debug|config.log_level = :info|
-     | .   |config.active_record.dump_schema_after_migration = false|  |
+     |development|<s>config.active_record.migration_error = :page_load</s>|   |
+     |production|<s>config.log_level = :debug</s>|<s>config.log_level = :info</s>|
+     | production   |<s>config.active_record.dump_schema_after_migration = false</s>|  |
   
     - initializers folder
     
      |file |properties_app | users_app           | 
      |---  |:-------------:|--------------------:|
-     | .   |               | silencer.rb .       |
-     | .   | .             | sync_settings.rb .  |
-     |     |backtrace silencers|                 |
-     |     |application_controller_renderer.rb|  |
+     |    |               | <s>silencer.rb </s>      |
+     |     |<s>backtrace silencers</s>|                 |
+     |     |<s>application_controller_renderer.rb</s>|  |
    
     - <s>ONLY users_app has `settings` folder</s>
       
